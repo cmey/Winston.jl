@@ -165,4 +165,9 @@ function example08()
     y = randn(length(x))
 
     timeplot(x, y, format="%x\n%X")
+
+    xrange = [
+        DateTime(Year(2000), Month(3), Day(14), Hour(21), Minute(45)),
+        DateTime(Year(2000), Month(3), Day(14), Hour(21), Minute(55))]
+    timeplot(x, y, xrange=xrange, format="%x\n%X")
 end
